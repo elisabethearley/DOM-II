@@ -74,7 +74,9 @@ bodyChange[3].addEventListener('mousedown', function(event) {
 let image = document.querySelector('.inverse-content img');
 console.log(image);
 image.addEventListener('dblclick', function(e) {
-    e.classList.toggle('.rounded');
+    console.log(e.target);
+    e.target.classList.toggle('rounded');
+    
 });
 
 let button = document.querySelectorAll('.btn');
@@ -91,13 +93,14 @@ button[2].addEventListener('click', function(event) {
 
 let downArrow = document.querySelector('body');
 downArrow.addEventListener('keydown', (event) => {
+    console.log(event.keyCode);
     if (event.isComposing || event.keyCode === 40) {
         alert("You're going down!!!");
     }
 });
 
 let height = document.querySelector('body');
-let width = document.querySelector('.main-navigation');
+let width = document.querySelector('body');
 function windowSize() {
     height.textContent = window.innerHeight;
     width.textContent = window.innerWidth;
