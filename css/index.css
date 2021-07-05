@@ -288,6 +288,15 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
+.home .inverse-content .img-content img {
+  border-radius: 10px;
+  transform: scale(0.9);
+  transform-origin: 0 0;
+  transition: transform 0.6s;
+}
+.home .inverse-content .img-content .rounded {
+  transform: rotate(20deg);
+}
 @media (max-width: 500px) {
   .home .inverse-content .img-content {
     order: 2;
